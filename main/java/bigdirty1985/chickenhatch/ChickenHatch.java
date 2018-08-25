@@ -20,13 +20,13 @@ public class ChickenHatch {
 
 	public static final String modId = "chickenhatch";
 	public static final String name = "Chicken Hatch";
-	public static final String version = "1.10.2";
+	public static final String version = "1.0.0";
 
 	@Mod.Instance(modId)
 	public static ChickenHatch instance;
 
 	//Tool Materials
-	public static final Item.ToolMaterial flintToolMaterial = EnumHelper.addToolMaterial("FLINT", 2, 100, 3, 2, 10);
+	//public static final Item.ToolMaterial flintToolMaterial = EnumHelper.addToolMaterial("FLINT", 2, 100, 3, 2, 10);
 	
 	
 	@SidedProxy(serverSide = "bigdirty1985.chickenhatch.proxy.CommonProxy", clientSide = "bigdirty1985.chickenhatch.proxy.ClientProxy")

@@ -3,7 +3,7 @@
   "modid": "chickenhatch",
   "name": "Chicken Hatch",
   "description": "Chickens hatch from despawned eggs",
-  "version": "${1.0.0}",
+  "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
