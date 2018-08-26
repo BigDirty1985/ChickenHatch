@@ -23,27 +23,20 @@ public class ChickenHatchConfig {
 		syncConfig();
 	}
 	
-//	public static boolean isRootingEnabled = true; // Save whether pancakes are enabled
-//	public static int extraPiglets = 1;
+	public static int chickenHatchChance = 1;
 
 	public static void syncConfig() { // Gets called from preInit
 	    try {
 	        // Load config
 	        config.load();
 
-	      /*  // Read props from config
-	        Property isRootingEnabledProp = config.get(Configuration.CATEGORY_GENERAL, // What category will it be saved to, can be any string
-	                "isRootingEnabled", // Property name
-	                "true", // Default value
-	                "Whether or not pigs can root in dirt "); // Comment
+	      // Read props from config
+	        Property chickenHatchChanceProp = config.get(Configuration.CATEGORY_GENERAL, // What category will it be saved to, can be any string
+	                "chickenHatchChance", // Property name
+	                "25", // Default value
+	                "chance out of 100 that despawned eggs spawn chicks "); // Comment
 
-	        Property extraPigletProp = config.get(Configuration.CATEGORY_GENERAL, // What category will it be saved to, can be any string
-	                "extraPiglets", // Property name
-	                "1", // Default value
-	                "how many EXTRA babys do pigs spawn"); // Comment
-
-	        isRootingEnabled = isRootingEnabledProp.getBoolean(); // Get the boolean value, also set the property value to boolean
-	        extraPiglets = extraPigletProp.getInt();*/
+	        chickenHatchChance = chickenHatchChanceProp.getInt();
 	        
 	    } catch (Exception e) {
 	        // Failed reading/writing, just continue

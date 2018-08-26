@@ -20,7 +20,7 @@ public class ChickenHatch {
 
 	public static final String modId = "chickenhatch";
 	public static final String name = "Chicken Hatch";
-	public static final String version = "1.0.0";
+	public static final String version = "1.1.0";
 
 	@Mod.Instance(modId)
 	public static ChickenHatch instance;
@@ -42,6 +42,7 @@ public class ChickenHatch {
 		ModItems.init();
 		ModRecipes.init();
 		FMLCommonHandler.instance().bus().register(new ChickenHatchEventHandler());
+		ChickenHatchConfig.init(event);
 
 	}
 
