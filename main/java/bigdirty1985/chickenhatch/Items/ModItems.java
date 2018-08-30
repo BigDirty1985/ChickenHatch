@@ -12,10 +12,11 @@ public class ModItems {
 	
 	public static Item honeyDewSeed;
 	public static Item honeyDewSlice; */
-	public static Item eggShell;
+	public static Item eggShell,rottenEgg;
 	public static void init() {
 		
 		eggShell = register(new ItemBase("eggShell").setCreativeTab(CreativeTabs.MATERIALS));
+		rottenEgg = register(new ItemRottenEgg("rottenEgg").setCreativeTab(CreativeTabs.MISC));
 	} 
 	
 	/*{

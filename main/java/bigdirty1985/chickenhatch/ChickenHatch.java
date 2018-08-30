@@ -6,6 +6,7 @@ import bigdirty1985.chickenhatch.Items.ModItems;
 import bigdirty1985.chickenhatch.event.ChickenHatchEventHandler;
 import bigdirty1985.chickenhatch.proxy.CommonProxy;
 import bigdirty1985.chickenhatch.recipes.ModRecipes;
+import net.minecraft.block.BlockDispenser;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.FMLCommonHandler;
@@ -14,13 +15,16 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.dispenser.IBehaviorDispenseItem;
 
-@Mod(modid = ChickenHatch.modId, name = ChickenHatch.name, version = ChickenHatch.version, acceptedMinecraftVersions = "[1.10.2]")
+@Mod(modid = ChickenHatch.modId, name = ChickenHatch.name, version = ChickenHatch.version, acceptedMinecraftVersions = ChickenHatch.mcversion)
 public class ChickenHatch {
 
 	public static final String modId = "chickenhatch";
 	public static final String name = "Chicken Hatch";
-	public static final String version = "1.1.0";
+	public static final String version = "1.1.5";
+	public static final String mcversion = "[1.10.2]";
+	
 
 	@Mod.Instance(modId)
 	public static ChickenHatch instance;
@@ -56,6 +60,7 @@ public class ChickenHatch {
 	public void postInit(FMLPostInitializationEvent event) {
 
 		System.out.println(name + " Wait... It actually worked? HMPH! How bout that.....");
+		
 	}
 
 }

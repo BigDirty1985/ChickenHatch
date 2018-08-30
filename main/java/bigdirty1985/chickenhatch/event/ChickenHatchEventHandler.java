@@ -30,7 +30,7 @@ public class ChickenHatchEventHandler {
 
 	EntityAgeable newChick;
 	Random r = new Random();
-	int hatchChance =ChickenHatchConfig.chickenHatchChance;
+	int hatchChance = ChickenHatchConfig.chickenHatchChance;
 
 	@SubscribeEvent
 	public void hatch(ItemExpireEvent e) {
@@ -44,18 +44,23 @@ public class ChickenHatchEventHandler {
 					newChick.setPosition(e.getEntity().posX, e.getEntity().posY, e.getEntity().posZ);
 					newChick.setGrowingAge(-23000);
 					e.getEntity().worldObj.spawnEntityInWorld(newChick);
-					e.getEntity().worldObj.spawnEntityInWorld(new EntityItem(e.getEntity().worldObj, e.getEntity().posX, e.getEntity().posY, e.getEntity().posZ, new ItemStack(ModItems.eggShell,1)));
+					e.getEntity().worldObj.spawnEntityInWorld(new EntityItem(e.getEntity().worldObj, e.getEntity().posX,
+							e.getEntity().posY, e.getEntity().posZ, new ItemStack(ModItems.eggShell, 1)));
+				} else {
+					e.getEntity().worldObj.spawnEntityInWorld(new EntityItem(e.getEntity().worldObj, e.getEntity().posX,
+							e.getEntity().posY, e.getEntity().posZ, new ItemStack(ModItems.rottenEgg, 1)));
 				}
+
 			}
 		}
 	}
 
-	
 	@SubscribeEvent
 	public void eggHit(ThrowableImpactEvent e) {
 		if (e.getEntityThrowable() instanceof EntityEgg && !e.getEntity().worldObj.isRemote) {
 
-			e.getEntityThrowable().getEntityWorld().spawnEntityInWorld(new EntityItem(e.getEntity().worldObj, e.getEntity().posX, e.getEntity().posY, e.getEntity().posZ, new ItemStack(ModItems.eggShell,1)));
+			e.getEntityThrowable().getEntityWorld().spawnEntityInWorld(new EntityItem(e.getEntity().worldObj,
+					e.getEntity().posX, e.getEntity().posY, e.getEntity().posZ, new ItemStack(ModItems.eggShell, 1)));
 
 		}
 	}
