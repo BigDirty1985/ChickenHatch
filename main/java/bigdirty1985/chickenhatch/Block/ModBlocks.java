@@ -13,7 +13,7 @@ public class ModBlocks {
 	public static void init() {
 		//oreLooseIron = register(new BlockOre("oreLooseIron").setCreativeTab(CreativeTabs.MATERIALS));
 	}
-
+/*
 	private static <T extends Block> T register(T block, ItemBlock itemBlock) {
 		GameRegistry.register(block);
 		if (itemBlock != null) {
@@ -31,5 +31,5 @@ public class ModBlocks {
 		ItemBlock itemBlock = new ItemBlock(block);
 		itemBlock.setRegistryName(block.getRegistryName());
 		return register(block, itemBlock);
-	}
+	}*/
 }

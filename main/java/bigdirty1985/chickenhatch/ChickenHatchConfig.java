@@ -23,7 +23,7 @@ public class ChickenHatchConfig {
 		syncConfig();
 	}
 	
-	public static int chickenHatchChance = 1;
+	public static int chickenHatchChance = 25;
 
 	public static void syncConfig() { // Gets called from preInit
 	    try {

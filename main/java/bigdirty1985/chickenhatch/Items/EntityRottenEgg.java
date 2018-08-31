@@ -51,7 +51,7 @@ public class EntityRottenEgg extends EntityEgg
              target.addPotionEffect(new PotionEffect(Potion.getPotionById(9),200,2));
         }
 
-        if (!this.worldObj.isRemote && this.rand.nextInt(8) == 0)
+        if (!this.world.isRemote && this.rand.nextInt(8) == 0)
         {
             int i = 1;
 
@@ -73,10 +73,10 @@ public class EntityRottenEgg extends EntityEgg
 
         for (int k = 0; k < 8; ++k)
         {
-            this.worldObj.spawnParticle(EnumParticleTypes.ITEM_CRACK, this.posX, this.posY, this.posZ, ((double)this.rand.nextFloat() - 0.5D) * 0.08D, ((double)this.rand.nextFloat() - 0.5D) * 0.08D, ((double)this.rand.nextFloat() - 0.5D) * 0.08D, new int[] {Item.getIdFromItem(Items.EGG)});
+            this.world.spawnParticle(EnumParticleTypes.ITEM_CRACK, this.posX, this.posY, this.posZ, ((double)this.rand.nextFloat() - 0.5D) * 0.08D, ((double)this.rand.nextFloat() - 0.5D) * 0.08D, ((double)this.rand.nextFloat() - 0.5D) * 0.08D, new int[] {Item.getIdFromItem(Items.EGG)});
         }
 
-        if (!this.worldObj.isRemote)
+        if (!this.world.isRemote)
         {
             this.setDead();
         }

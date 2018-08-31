@@ -1,6 +1,5 @@
 package bigdirty1985.chickenhatch.proxy;
 
-
 import bigdirty1985.chickenhatch.ChickenHatch;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;

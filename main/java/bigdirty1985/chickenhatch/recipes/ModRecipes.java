@@ -10,7 +10,7 @@ public class ModRecipes {
 
 	public static void init() {
 
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.DYE,1, EnumDyeColor.WHITE.getDyeDamage()), ModItems.eggShell,ModItems.eggShell,ModItems.eggShell,ModItems.eggShell);
+		//GameRegistry.addShapelessRecipe(new ItemStack(Items.DYE,1, EnumDyeColor.WHITE.getDyeDamage()), ModItems.eggShell,ModItems.eggShell,ModItems.eggShell,ModItems.eggShell);
 		// test Shapeless Recipe
 		//GameRegistry.addShapelessRecipe(new ItemStack(ModItems.leatherCured, 4), Items.LEATHER);
 		// Shaped Recipe

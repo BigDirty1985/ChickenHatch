@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "chickenhatch:eggshell"
+        },
+        {
+            "item": "chickenhatch:eggshell"
+        },
+        {
+            "item": "chickenhatch:eggshell"
+        },
+        {
+            "item": "chickenhatch:eggshell"
+        }
+    ],
+    "result": {
+        "item": "minecraft:dye",
+        "data": 15,
+        "count": 1
+    }
+}

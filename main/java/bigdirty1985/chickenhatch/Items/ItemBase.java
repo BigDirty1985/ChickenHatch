@@ -5,7 +5,8 @@ import net.minecraft.item.Item;
 import bigdirty1985.chickenhatch.ChickenHatch;
 import bigdirty1985.chickenhatch.Block.ItemModelProvider;
 
-public class ItemBase extends Item implements ItemModelProvider {
+public class ItemBase extends Item {
+
 
 	protected String name;
 
@@ -14,18 +15,17 @@ public class ItemBase extends Item implements ItemModelProvider {
 		setUnlocalizedName(name);
 		setRegistryName(name);
 	}
-
-	public void registerItemModel(Item item) {
+	public void registerItemModel() {
 		ChickenHatch.proxy.registerItemRenderer(this, 0, name);
 	}
-
+	
 	@Override
 	public ItemBase setCreativeTab(CreativeTabs tab) {
 		super.setCreativeTab(tab);
 		return this;
 	}
 
-
+	
 
 
 }
